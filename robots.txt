@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/sitemap.xml

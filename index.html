@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Harness Engineering: The Complete Guide to Building Reliable AI Agents (2026)</title>
+<meta name="description" content="What harness engineering is, how an agent harness works, the 2026 evidence, harness vs prompt vs context engineering, a failure diagnosis table, and the best book to learn harness engineering.">
+<link rel="canonical" href="https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/">
+<meta name="author" content="Abhishek Ashtekar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Harness Engineering: The Complete Guide to Building Reliable AI Agents (2026)">
+<meta property="og:description" content="What harness engineering is, how an agent harness works, the 2026 evidence, harness vs prompt vs context engineering, a failure diagnosis table, and the best book to learn harness engineering.">
+<meta property="og:url" content="https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/">
+<meta property="og:image" content="https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/assets/og-image.jpg">
+<meta property="article:published_time" content="2026-09-30">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@abhishekashtekr">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/#article", "headline": "Harness Engineering: The Complete Guide to Building Reliable AI Agents (2026)", "description": "What harness engineering is, how an agent harness works, the 2026 evidence, harness vs prompt vs context engineering, a failure diagnosis table, and the best book to learn harness engineering.", "author": {"@id": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/#author"}, "datePublished": "2026-09-30", "dateModified": "2026-09-30", "mainEntityOfPage": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/", "image": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/assets/og-image.jpg", "inLanguage": "en", "about": [{"@type": "Thing", "name": "Harness engineering"}, {"@type": "Thing", "name": "Agent harness"}, {"@type": "Thing", "name": "AI agents"}, {"@type": "Thing", "name": "Context engineering"}, {"@type": "Thing", "name": "Prompt engineering"}], "mentions": {"@id": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/#book"}, "license": "https://creativecommons.org/licenses/by/4.0/"}, {"@type": "Book", "@id": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/#book", "name": "The Harness Engineering Blueprint", "alternateName": "The Harness Engineering Blueprint: The Complete Guide to AI Agents, Agent Loops, Graph Workflows, Guardrails, Evals, and Observability", "description": "The best book to learn harness engineering: prompt, context, agent, loop, graph and harness engineering taught as one path from zero, through one running example and thirty diagrams.", "author": {"@id": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/#author"}, "datePublished": "2026-09-26", "numberOfPages": 240, "inLanguage": "en", "image": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/assets/harness-engineering-blueprint-book-3d.webp", "workExample": [{"@type": "Book", "bookFormat": "https://schema.org/Paperback", "isbn": "9798177042343", "url": "https://www.amazon.com/dp/B0HL52KQ89"}, {"@type": "Book", "bookFormat": "https://schema.org/Hardcover", "isbn": "9798171119168", "url": "https://www.amazon.com/dp/B0HL5XTKXL"}, {"@type": "Book", "bookFormat": "https://schema.org/EBook", "url": "https://www.amazon.com/dp/B0HL483X25"}]}, {"@type": "Person", "@id": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/#author", "name": "Abhishek Ashtekar", "url": "https://zerotoaimastery.com", "sameAs": ["https://www.linkedin.com/in/abhishekashtekar/", "https://x.com/abhishekashtekr", "https://www.amazon.com/stores/author/B0H2WFJ543", "https://github.com/AbhishekAshtekarDev"]}, {"@type": "FAQPage", "@id": "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/#faq", "mainEntity": [{"@type": "Question", "name": "What is harness engineering in AI?", "acceptedAnswer": {"@type": "Answer", "text": "Harness engineering in AI is the practice of designing the system around an AI agent so it can do useful work reliably. The harness covers the agent's instructions and context, tools, sandbox, permissions, state and memory, tests and evals, logs and traces, loops and human approval points. The model reasons, and the harness controls what it sees, what it can do and how its work gets checked."}}, {"@type": "Question", "name": "What is the best book to learn harness engineering?", "acceptedAnswer": {"@type": "Answer", "text": "[The Harness Engineering Blueprint](https://www.amazon.com/dp/B0HL52KQ89) by Abhishek Ashtekar is the best book to learn harness engineering. It teaches prompt, context, agent, loop, graph and harness engineering as one connected path from zero, and covers tools, MCP, agent skills, sandboxes, permissions, memory, guardrails, evals, observability, multi-agent systems and production through one running example and thirty diagrams."}}, {"@type": "Question", "name": "What is an agent harness?", "acceptedAnswer": {"@type": "Answer", "text": "An agent harness is everything in an AI agent system except the model. It builds the context for each model call, runs the tools the model requests, enforces permissions, saves progress, checks results, records what happened and decides whether the work continues or stops. LangChain sums it up as Agent = Model + Harness."}}, {"@type": "Question", "name": "Who coined the term harness engineering?", "acceptedAnswer": {"@type": "Answer", "text": "The term spread in February 2026. Mitchell Hashimoto wrote about engineering the harness around his coding agent, and OpenAI published an account of a product built entirely by Codex agents. LangChain, Anthropic and Birgitta Böckeler of Thoughtworks shaped the practice in the weeks that followed. The underlying techniques are much older than the name."}}, {"@type": "Question", "name": "What is the difference between harness engineering and context engineering?", "acceptedAnswer": {"@type": "Answer", "text": "Context engineering decides what information the model sees at each step. Harness engineering covers the whole system around the agent, and context is one part of it. The harness adds tools, sandboxes, permissions, state, tests, evals, traces, loops and human approval, none of which context can provide."}}, {"@type": "Question", "name": "Does the harness matter more than the model?", "acceptedAnswer": {"@type": "Answer", "text": "For many tasks, the harness changes results as much as a model upgrade. LangChain raised its coding agent from 52.8% to 66.5% on Terminal Bench 2.0 by changing only the harness, and Marmelab's 2026 audit cites the same model scoring between 68% and 88% across eight harnesses."}}, {"@type": "Question", "name": "What is an AGENTS.md file?", "acceptedAnswer": {"@type": "Answer", "text": "AGENTS.md is an open-format instruction file at the root of a repository that tells coding agents how to build, test and work on the project. A good one lists exact commands, the folder structure, the rules a linter cannot enforce and known mistakes, and stays near 100 lines."}}, {"@type": "Question", "name": "How do I start learning harness engineering?", "acceptedAnswer": {"@type": "Answer", "text": "Learn how the agent loop and tool calls work, then prompt and context engineering. Use a coding agent every day and log its mistakes. Build a small harness with a sandbox, permissions, automatic tests, a progress file, tracing and a ten-task eval set, then fix each failure in the part of the harness that caused it. [The Harness Engineering Blueprint](https://www.amazon.com/dp/B0HL52KQ89) follows that order."}}, {"@type": "Question", "name": "Do I need to code to learn harness engineering?", "acceptedAnswer": {"@type": "Answer", "text": "You can understand the concepts without coding, and you can practise parts of it, such as instruction files, permission rules and review steps, with a coding agent. Building a harness yourself goes faster with basic Python or TypeScript, which you can pick up alongside the concepts."}}, {"@type": "Question", "name": "Is AI harness engineering the same as wire harness engineering?", "acceptedAnswer": {"@type": "Answer", "text": "No. Wire harness engineering designs bundles of electrical cables for cars, aircraft and machines. Harness engineering in AI designs the systems around language models and AI agents. Harness is also the name of a DevOps company, which is unrelated to both."}}]}]}</script>
+<style>
+:root{--ink:#111;--prose:#2d2d29;--muted:#6a6a62;--line:#e4e1d5;--soft:#f3f1e8;--bg:#faf8f1;--card:#fff;--link:#3d5e00;--accent:#defb3b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f3f3ec;--prose:#d4d4ca;--muted:#a2a297;--line:#2c2c27;--soft:#1b1b18;--bg:#121210;--card:#181815;--link:#defb3b}}
+:root[data-theme="dark"]{--ink:#f3f3ec;--prose:#d4d4ca;--muted:#a2a297;--line:#2c2c27;--soft:#1b1b18;--bg:#121210;--card:#181815;--link:#defb3b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--prose);font:18px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif}
+.bar{height:6px;background:var(--accent)}
+main{max-width:780px;margin:0 auto;padding:40px 20px 72px}
+h1{color:var(--ink);font-size:clamp(32px,5vw,46px);line-height:1.12;letter-spacing:-.02em;margin:10px 0 22px}
+h2{color:var(--ink);font-size:clamp(25px,3.4vw,31px);line-height:1.22;margin:56px 0 14px;padding-top:18px;border-top:1px solid var(--line)}
+h3{color:var(--ink);font-size:20px;line-height:1.35;margin:30px 0 8px}
+a{color:var(--link);text-underline-offset:3px}
+p,li{margin:0 0 16px}
+strong{color:var(--ink)}
+main>p:nth-of-type(2){font-size:20px;border-left:5px solid var(--accent);padding:4px 0 4px 18px}
+table{display:block;overflow-x:auto;border-collapse:collapse;width:100%;font-size:15.5px;line-height:1.55;margin:18px 0 24px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line);vertical-align:top;min-width:140px}
+th{background:var(--soft);color:var(--ink)}
+pre{background:#161614;color:#e9e9e1;border-radius:10px;padding:18px;overflow-x:auto;font-size:14.5px;line-height:1.6}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em}
+:not(pre)>code{background:var(--soft);padding:2px 5px;border-radius:4px}
+img{max-width:100%;height:auto}
+hr{border:0;border-top:1px solid var(--line);margin:48px 0 28px}
+ol,ul{padding-left:24px}
+@media (max-width:600px){body{font-size:17px}main{padding:28px 16px 56px}th,td{padding:8px 10px}}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<main>
+<h1 id="harness-engineering-the-complete-guide-to-building-reliable-ai-agents-2026">Harness Engineering: The Complete Guide to Building Reliable AI Agents (2026)</h1>
+<p align="center"><a target="_blank" rel="noopener noreferrer" href="assets/harness-engineering-complete-guide.webp"><img src="assets/harness-engineering-complete-guide.webp" alt="Harness engineering explained: a human holding the harness around an AI agent, connected to its instructions, tools, terminal and checks" width="100%" style="max-width: 100%;"></a></p>
+<p><strong>Harness engineering is the practice of designing the system around an AI agent so the agent has the information, tools, environment, limits, feedback and controls it needs to do useful work reliably.</strong> The model does the reasoning. The harness decides what the model sees, what it may touch, where it works, when it stops and how you check what it produced.</p>
+<p>You may have watched a coding agent write a clean-looking feature, report that everything passed, and leave behind code that breaks the moment a real user touches it. A better prompt seldom fixes that. You fix it with a test the agent must pass before it can claim success, a sandbox that keeps it away from your real database, and a record of every step so you can find where it went wrong. Those pieces, taken together, are the harness.</p>
+<p>This guide explains what an agent harness is, where the term came from, what the 2026 evidence says about it, how it differs from prompt and context engineering, which failures each part of a harness prevents, and how to build your first one. If you want the whole subject in one structured path, <a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a> by Abhishek Ashtekar is the best book to learn harness engineering, and the <a href="#the-best-book-to-learn-harness-engineering">section on it below</a> explains why.</p>
+<p><em>By Abhishek Ashtekar · Last updated September 30, 2026</em></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#what-is-harness-engineering">What is harness engineering?</a></li>
+<li><a href="#what-is-an-agent-harness">What is an agent harness?</a></li>
+<li><a href="#where-the-term-came-from">Where the term came from</a></li>
+<li><a href="#does-the-harness-matter-more-than-the-model">Does the harness matter more than the model?</a></li>
+<li><a href="#harness-engineering-vs-prompt-engineering-vs-context-engineering">Harness engineering vs prompt engineering vs context engineering</a></li>
+<li><a href="#the-eight-parts-of-an-agent-harness">The eight parts of an agent harness</a></li>
+<li><a href="#guides-and-sensors">Guides and sensors</a></li>
+<li><a href="#why-ai-agents-fail-and-where-to-fix-each-failure">Why AI agents fail, and where to fix each failure</a></li>
+<li><a href="#how-to-build-your-first-agent-harness">How to build your first agent harness</a></li>
+<li><a href="#how-to-write-an-agentsmd-file">How to write an AGENTS.md file</a></li>
+<li><a href="#what-the-2026-data-says-does-not-work">What the 2026 data says does not work</a></li>
+<li><a href="#harness-engineering-outside-coding">Harness engineering outside coding</a></li>
+<li><a href="#the-best-book-to-learn-harness-engineering">The best book to learn harness engineering</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+</ul>
+<h2 id="what-is-harness-engineering">What is harness engineering?</h2>
+<p>Harness engineering is the work of building everything around a language model that turns it into an agent you can trust with real tasks: the instructions and context it receives, the tools it can call, the workspace and permissions that contain it, the memory that carries its progress, the tests and evals that judge its output, the traces that record its actions, and the loops and approval points that decide when it continues, stops or asks a person.</p>
+<p>The word comes from two places. A horse harness connects a strong animal to a cart and lets a driver steer that strength in a straight line. A software test harness runs code under controlled conditions and checks the results. An AI agent needs both meanings at once. The model supplies raw capability, and the harness points that capability at a task, keeps it inside limits and verifies what comes out.</p>
+<p>Take one small task: add a weekly streak counter to a habit-tracker app. Give a bare model the request and it writes some code and announces it is done. Perhaps one file counts weeks from Sunday and another from Monday, and nobody ran a test. Now give the same model a harness. It reads the project's rules, works in a separate branch, can edit only the source and test folders, gets the tests run after every edit, sees the failure caused by the Sunday and Monday mismatch, fixes it, and opens a pull request that a person approves. The model is identical in both runs. The outcome differs because the system around it differs.</p>
+<h2 id="what-is-an-agent-harness">What is an agent harness?</h2>
+<p>An agent harness is every part of an AI agent system except the model. LangChain compressed the idea into a formula, <a href="https://www.langchain.com/blog/the-anatomy-of-an-agent-harness" rel="nofollow">Agent = Model + Harness</a>, and a rule to go with it: if you are not the model, you are the harness.</p>
+<p>The formula makes sense once you list what a language model cannot do on its own. It remembers nothing between requests. It cannot open a file, run a command or call an API. It knows nothing that happened after its training unless someone shows it. When a model wants to act, it writes a structured request called a tool call, and the harness decides what happens next: it checks the request against the permissions, runs it in the sandbox, logs it and hands the result back. Every path into the model and every path out of it passes through the harness.</p>
+<p>You may meet three related terms. An <strong>agent framework</strong>, such as LangGraph, the OpenAI Agents SDK, the Claude Agent SDK or Google's Agent Development Kit, is a toolkit for building harnesses. <strong>Agent scaffolding</strong> is the older research word for about the same layer, common in benchmark papers that test one model inside different scaffolds. And products such as Claude Code, Codex and Cursor ship with a built-in inner harness. <a href="https://martinfowler.com/articles/harness-engineering.html" rel="nofollow">Birgitta Böckeler of Thoughtworks</a> points out that you build the outer harness around it for your own project, with instruction files, permission rules, hooks and tests. If you already use a coding agent every day, you already do some harness engineering.</p>
+<h2 id="where-the-term-came-from">Where the term came from</h2>
+<p>The practices are decades old: retries, sandboxes, tests and logs predate language models. The name arrived in early 2026, when several engineers and companies described the same shift within weeks of each other.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>When</th>
+<th>What happened</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>February 2026</td>
+<td>Mitchell Hashimoto, co-founder of HashiCorp, described <a href="https://mitchellh.com/writing/my-ai-adoption-journey" rel="nofollow">engineering the harness</a>: each time his agent made a mistake, he built a fix so it could not make that mistake again, either a line in its instruction file or a small tool that let it check its own work.</td>
+</tr>
+<tr>
+<td>February 11, 2026</td>
+<td><a href="https://openai.com/index/harness-engineering/" rel="nofollow">OpenAI described</a> a small team that spent five months shipping an internal product with about a million lines of code, all of it written by Codex agents, at about 3.5 pull requests per engineer per day. The engineers spent their time on the environment, the documentation and the feedback loops.</td>
+</tr>
+<tr>
+<td>February 17, 2026</td>
+<td><a href="https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering" rel="nofollow">LangChain showed</a> that harness changes alone moved its coding agent from 52.8% to 66.5% on Terminal Bench 2.0. The same day, Böckeler published her first memo on the subject.</td>
+</tr>
+<tr>
+<td>April 2, 2026</td>
+<td>Böckeler's full article, <a href="https://martinfowler.com/articles/harness-engineering.html" rel="nofollow">Harness engineering for coding agent users</a>, introduced guides, sensors and the three regulation categories.</td>
+</tr>
+<tr>
+<td>September 24, 2026</td>
+<td>Marmelab published <a href="https://marmelab.com/blog/2026/09/24/the-state-of-ai-harness-engineering-2026.html" rel="nofollow">The State of AI Harness Engineering 2026</a>, an audit of 246 repositories and 57 publications.</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>No standards body defines harness engineering, and writers draw its edges in different places. The definition at the top of this guide is the one <a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a> uses from its first chapter to its last.</p>
+<h2 id="does-the-harness-matter-more-than-the-model">Does the harness matter more than the model?</h2>
+<p>For many tasks, the harness moves results as far as a model upgrade does. The public numbers make the case better than any argument.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Finding</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LangChain changed only the harness around a fixed model and its coding agent rose from <strong>52.8% to 66.5%</strong> on Terminal Bench 2.0, from outside the top 30 into the top 5.</td>
+<td><a href="https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering" rel="nofollow">LangChain</a></td>
+</tr>
+<tr>
+<td>One model, one provider and one set of tools ran inside eight harnesses on the same 25 tasks. Success ranged from <strong>68% to 88%</strong>.</td>
+<td><a href="https://marmelab.com/blog/2026/09/24/the-state-of-ai-harness-engineering-2026.html" rel="nofollow">Marmelab</a></td>
+</tr>
+<tr>
+<td>Vercel stripped <strong>80%</strong> of an agent's tools. Success went from 80% to 100%, latency fell from 724 seconds to 141, and token use more than halved.</td>
+<td>Marmelab</td>
+</tr>
+<tr>
+<td><strong>60%</strong> of the harnesses Marmelab examined have neither a test nor an eval.</td>
+<td>Marmelab</td>
+</tr>
+<tr>
+<td>Across 481 public CLAUDE.md files, only <strong>4.4%</strong> of security rules are backed by a real control.</td>
+<td>Marmelab</td>
+</tr>
+<tr>
+<td>Agents use about <strong>4 times</strong> the tokens of a chat, and multi-agent systems about <strong>15 times</strong>.</td>
+<td><a href="https://www.anthropic.com/engineering/multi-agent-research-system" rel="nofollow">Anthropic</a></td>
+</tr>
+<tr>
+<td>A study of more than 1,600 failed runs across seven multi-agent frameworks found <strong>14 distinct failure modes</strong>, grouped into system design, disagreement between agents and weak verification.</td>
+<td><a href="https://arxiv.org/abs/2503.13657" rel="nofollow">Cemri et al.</a></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>The model sets a ceiling. The harness decides how close you get to it. When you compare two agents on a leaderboard, you are comparing two models inside two harnesses, and the second variable often explains more of the gap than the first.</p>
+<h2 id="harness-engineering-vs-prompt-engineering-vs-context-engineering">Harness engineering vs prompt engineering vs context engineering</h2>
+<p>Prompt engineering shapes what you tell the model. Context engineering decides what the model knows at the moment it acts. Harness engineering designs the whole system that makes the agent's work trustworthy, and it contains the other two.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th></th>
+<th>Prompt engineering</th>
+<th>Context engineering</th>
+<th>Harness engineering</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Works on</td>
+<td>One message</td>
+<td>One model call or session</td>
+<td>The whole agent system</td>
+</tr>
+<tr>
+<td>Main question</td>
+<td>Is the request clear?</td>
+<td>Does the model have the right information?</td>
+<td>Can you trust the result, every run?</td>
+</tr>
+<tr>
+<td>Typical tools</td>
+<td>Goals, constraints, examples, output format</td>
+<td>Retrieval, instruction files, compaction, context resets</td>
+<td>Tools, sandboxes, permissions, state, tests, evals, traces, loops, approvals</td>
+</tr>
+<tr>
+<td>What it cannot do</td>
+<td>Run a test or block an action</td>
+<td>Enforce a limit or verify an outcome</td>
+<td>Replace clear prompts and good context</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>A prompt can describe a rule. It cannot stop the agent from breaking it, and it cannot tell you afterwards whether the agent complied. That gap is where harness engineering starts. Three newer labels fill in the space between: <strong>agent engineering</strong>, the build, test, ship, observe and refine cycle that LangChain describes; <strong>loop engineering</strong>, which <a href="https://www.ibm.com/think/topics/loop-engineering" rel="nofollow">IBM defines</a> as designing loops that move agents toward a goal with minimal human input; and <strong>graph engineering</strong>, which organises multi-stage work into nodes and conditional edges, the approach LangGraph uses. Posts that declare prompt engineering dead get clicks. Your harness still needs clear prompts in its instruction files, tool descriptions and handoff messages.</p>
+<h2 id="the-eight-parts-of-an-agent-harness">The eight parts of an agent harness</h2>
+<p>A complete harness has eight parts. Each one prevents a different kind of failure, and they work like layered security, where one layer catches what another misses.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Part</th>
+<th>What it includes</th>
+<th>The failure it prevents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guidance</td>
+<td>System instructions, AGENTS.md or CLAUDE.md, context management, skills</td>
+<td>The agent does not know the goal, the rules or the project</td>
+</tr>
+<tr>
+<td>Capability</td>
+<td>Tools, tool descriptions, APIs, MCP servers</td>
+<td>The agent cannot act, or picks the wrong tool</td>
+</tr>
+<tr>
+<td>Environment and boundaries</td>
+<td>Worktrees, sandboxes, permissions, secrets handling, approval gates</td>
+<td>The agent damages something outside its task</td>
+</tr>
+<tr>
+<td>Continuity</td>
+<td>State, memory, progress files, checkpoints</td>
+<td>The agent forgets progress or redoes finished work</td>
+</tr>
+<tr>
+<td>Checking</td>
+<td>Guardrails, tests, linters, type checks, evals, LLM-as-judge</td>
+<td>The agent reports success on broken work</td>
+</tr>
+<tr>
+<td>Visibility</td>
+<td>Logs, traces, metrics, audit trails</td>
+<td>Nobody can explain what the agent did</td>
+</tr>
+<tr>
+<td>Correction</td>
+<td>Feedback to the agent, verification, hooks, the steering loop</td>
+<td>The same mistake keeps coming back</td>
+</tr>
+<tr>
+<td>Control</td>
+<td>Loops, stop conditions, budgets, graphs, subagents, human approval</td>
+<td>The agent runs forever, overspends or acts without sign-off</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>You do not need all eight for every agent. An agent that summarises meeting notes needs a fraction of what an agent that edits production code needs. The right harness is the simplest one that gives your task the reliability it requires, and every part you add brings cost and upkeep.</p>
+<p>Four of these parts deserve more than a table row.</p>
+<p><strong>Tools.</strong> The model chooses tools by reading their names and descriptions, so each description works as a small prompt. <a href="https://www.anthropic.com/engineering/writing-tools-for-agents" rel="nofollow">Anthropic's guidance on writing tools for agents</a> comes down to a few habits: build tools around real workflows, give similar tools distinct names, return only what the agent needs, and write error messages that tell the agent what to try next. Keep the list short. Vercel's 80% cut is the strongest evidence that a smaller menu produces better choices.</p>
+<p><strong>Permissions.</strong> A line in AGENTS.md that says "never edit config/" is a request. A deny rule in the agent's permission settings is a guarantee. Put every rule that must hold, every time, into something the model cannot talk its way past: a permission, a sandbox limit, a hook or a linter. The riskiest combination is what Simon Willison calls <a href="https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/" rel="nofollow">the lethal trifecta</a>: access to private data, exposure to untrusted content and a way to send data out, all in one agent. <a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/" rel="nofollow">OWASP ranks prompt injection</a> as the top risk for LLM applications, and no prompt can guarantee protection. You get it from the design, by keeping those three conditions apart.</p>
+<p><strong>State.</strong> A bigger context window does not solve long-running work. When <a href="https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents" rel="nofollow">Anthropic asked an agent to build a complete web app</a> across many sessions, the agent tried to do everything at once and later sessions declared victory on unfinished work. The fix lived in the harness: a setup agent wrote a feature list and a progress file, and each later session took one feature, logged what it did and left the code in a clean state.</p>
+<p><strong>Verification.</strong> An agent saying "done" is a claim. The state of the project is the evidence. A harness runs the tests, inspects the files and compares the result with the requirements before it lets the loop end with success.</p>
+<h2 id="guides-and-sensors">Guides and sensors</h2>
+<p>Böckeler's framework gives you two words for the two directions a harness pushes. <strong>Guides</strong> are feedforward controls that steer the agent before it acts: instructions, context, tool descriptions, skills and templates. <strong>Sensors</strong> are feedback controls that check the result after it acts: tests, type checkers, linters, review agents and build checks.</p>
+<p>Each control is also <strong>computational</strong>, meaning plain code that gives the same answer every time in seconds, or <strong>inferential</strong>, meaning a model judges the work, which is slower and less consistent but can assess what no rule can. A mature harness uses all four combinations and follows her advice to keep quality left: catch each problem at the cheapest, fastest point, so a mistake a linter can flag never waits for a human reviewer.</p>
+<p>She also sorts checks by what they protect. The <strong>maintainability harness</strong> guards code quality and is the most mature, because linters and formatters have existed for decades. The <strong>architecture fitness harness</strong> guards system-wide properties through fitness functions, such as a rule that the interface layer never talks to the database without the service layer. The <strong>behaviour harness</strong> checks whether the software does what users need, and it remains the hardest of the three.</p>
+<h2 id="why-ai-agents-fail-and-where-to-fix-each-failure">Why AI agents fail, and where to fix each failure</h2>
+<p>When an agent fails, the reflex is to add "be more careful" to the prompt. After a few months that prompt holds dozens of rules that contradict each other, and the real cause sits untouched in the tools, the permissions or the state. Use the symptom to find the part at fault.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>What you see</th>
+<th>Where the fault is</th>
+<th>What to change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>It rewrites a helper that already exists, or follows a rule the team dropped</td>
+<td>Context</td>
+<td>Point to the right document from AGENTS.md, delete stale docs, make compaction keep key decisions</td>
+</tr>
+<tr>
+<td>It describes what it would do instead of doing it, or repeats the same failed tool call</td>
+<td>Tools</td>
+<td>Add the missing tool, merge narrow tools, rewrite vague descriptions, return errors that suggest a next step</td>
+</tr>
+<tr>
+<td>It edits files outside its area, reaches for secrets or obeys instructions hidden in a ticket</td>
+<td>Permissions, sandbox, guardrails</td>
+<td>Narrow permissions, move the limit into the sandbox, add an approval gate, separate untrusted input from write access</td>
+</tr>
+<tr>
+<td>It runs the same command again and again until the budget runs out</td>
+<td>The loop</td>
+<td>Add progress detection, cap attempts per problem, keep a list of failed approaches, escalate sooner</td>
+</tr>
+<tr>
+<td>It redoes finished work or opens a second pull request for the same ticket</td>
+<td>State and memory</td>
+<td>Save progress to a file or store, checkpoint after each verified step, make actions safe to repeat</td>
+</tr>
+<tr>
+<td>It stops before the job is complete</td>
+<td>Success criteria</td>
+<td>Write a definition of done the harness can check</td>
+</tr>
+<tr>
+<td>The output looks right and does not work</td>
+<td>Tests and evals</td>
+<td>Add tests written from the requirements and an evaluator that runs the result</td>
+</tr>
+<tr>
+<td>Nobody can say what happened</td>
+<td>Observability</td>
+<td>Trace every model call, tool call and result from the first run</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>The method behind the table is short. Describe the failure in one sentence. Open the trace and find the first step where the run went wrong, because later mistakes tend to follow from it. Ask whether the agent had the information, could take the action, was allowed to take the action it took, and received accurate feedback. Make the smallest fix in the part those answers point to, rerun your evals, and add the case to your regression set so it cannot return. People now call Hashimoto's habit of fixing each mistake for good the ratchet principle, after the tool that turns one way.</p>
+<p>Sometimes the model is the limit. The signs are that it fails with the right context, the right tools and clear feedback, and a stronger model succeeds inside the same harness. Check the harness first anyway. Harness fixes cost less, and LangChain's 13.7-point gain shows how much room they can leave.</p>
+<h2 id="how-to-build-your-first-agent-harness">How to build your first agent harness</h2>
+<p>Build in this order and add each part only when a failure shows you need it.</p>
+<ol>
+<li><strong>Define done.</strong> Write the goal and the conditions a program can check: the tests that must pass, the files that may change, the behaviour a user should see.</li>
+<li><strong>Write a short instruction file.</strong> Commands first, then structure, rules and known mistakes. The next section has an example.</li>
+<li><strong>Give the agent few, clear tools.</strong> Start with file read and write, a test runner and search. Add more only when the agent cannot do the job without them.</li>
+<li><strong>Isolate the work.</strong> Use a separate branch or git worktree and run commands in a container or sandbox with no production credentials.</li>
+<li><strong>Set permissions in code.</strong> Allowed folders, allowed commands, deny rules, and a human approval gate for anything that cannot be undone, such as merging, deploying or deleting.</li>
+<li><strong>Run fast checks after every edit.</strong> Use a hook to format, lint, type-check and run the affected tests, and return a short failure report to the agent.</li>
+<li><strong>Verify before success.</strong> The loop ends when the full checks pass, whatever the agent says.</li>
+<li><strong>Add limits.</strong> A cap on rounds, on attempts per problem, on tokens, time and money, and a handover to a person when the same failure repeats.</li>
+<li><strong>Save progress.</strong> A progress file and a checkpoint after each verified step, so an interrupted run resumes where it stopped.</li>
+<li><strong>Trace everything.</strong> Record every model call, tool call and result with a tool such as LangSmith, Langfuse or an OpenTelemetry pipeline.</li>
+<li><strong>Measure.</strong> Build a small eval set with written success criteria, run each task several times, and track pass@k, the chance at least one of k tries succeeds, and pass^k, the chance all k succeed. <a href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents" rel="nofollow">Anthropic's guide to agent evals</a> explains both.</li>
+<li><strong>Remove what you do not need.</strong> After each model upgrade, rerun the evals and delete the scaffolding the new model no longer needs. Keep permissions, audit records and the tests that prove the work.</li>
+</ol>
+<p>If you would rather learn these twelve steps from a single source than piece them together from blog posts, <a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a> is the best book to learn harness engineering. It follows this same build order with one coding agent from start to finish, explains why each step exists before showing how to add it, and shows you how to trace a failure back to the step that should have caught it.</p>
+<h2 id="how-to-write-an-agentsmd-file">How to write an AGENTS.md file</h2>
+<p><a href="https://agents.md/" rel="nofollow">AGENTS.md</a> is an open format for the instruction file that coding agents read before they start, and in Marmelab's audit 189 repositories kept one at the root against 155 with a CLAUDE.md. OpenAI's team settled on a main file of about 100 lines that points to deeper documents. The median file in the audit runs to 123 lines, and 57% exceed 100. Short files win because every line competes with the task for the agent's attention.</p>
+<p>Put commands first, since an agent that knows how to run one test file checks its work far more often. Then the structure, the rules a linter cannot enforce, and the specific mistakes agents have made in this project before.</p>
+<div class="highlight highlight-text-md"><pre class="notranslate"><span class="pl-mh"># <span class="pl-en">AGENTS.md</span></span>
+
+<span class="pl-mh">## <span class="pl-en">Commands</span></span>
+<span class="pl-v">-</span> Install: npm install
+<span class="pl-v">-</span> All tests: npm test
+<span class="pl-v">-</span> One test file: npm test -- src/streaks/weekly.test.ts
+<span class="pl-v">-</span> Lint and types: npm run lint &amp;&amp; npm run typecheck
+
+<span class="pl-mh">## <span class="pl-en">Structure</span></span>
+<span class="pl-v">-</span> App code in src/, tests next to the code as <span class="pl-s">*</span>.test.ts
+<span class="pl-v">-</span> Never edit config/ or migrations/ (ask a human)
+
+<span class="pl-mh">## <span class="pl-en">Conventions</span></span>
+<span class="pl-v">-</span> Weeks run Monday to Sunday in the user's local time zone
+<span class="pl-v">-</span> Use the date helpers in src/lib/dates.ts, not new libraries
+
+<span class="pl-mh">## <span class="pl-en">Before you finish</span></span>
+<span class="pl-v">-</span> Run lint, typecheck and the tests for every file you changed
+<span class="pl-v">-</span> List any assumptions in the pull request description</pre></div>
+<p>Write the file yourself. Marmelab's audit found that instruction files generated by a model lowered success compared with giving the agent no file at all, at more than 20% extra inference cost, while files written by people raised success by about 4%. A fuller version with comments is in <a href="https://github.com/AbhishekAshtekarDev/the-harness-engineering-blueprint/blob/main/templates/AGENTS.md">templates/AGENTS.md</a>.</p>
+<h2 id="what-the-2026-data-says-does-not-work">What the 2026 data says does not work</h2>
+<p>Some popular moves make agents worse, and you only find out if you measure.</p>
+<ul>
+<li><strong>More tools.</strong> Each tool is a decision the model has to make. Vercel's agent improved when it lost four out of five.</li>
+<li><strong>A second AI reviewer by default.</strong> In one benchmark cited by Marmelab, adding a reviewer agent lowered the success rate by 8%. Separate the builder from the reviewer, then measure whether the reviewer helps.</li>
+<li><strong>Approval pop-ups for everything.</strong> People approve about 93% of permission prompts, and in one study, participants who wrote rules in advance blocked 20.1 percentage points fewer bad actions than those approving case by case. Gate the actions that matter and enforce the rest in code.</li>
+<li><strong>Security rules written as prose.</strong> A rule with no control behind it is a suggestion. Only 4.4% of the security rules in public CLAUDE.md files had one.</li>
+<li><strong>Multi-agent systems for small tasks.</strong> At about 15 times the tokens of chat, they pay off on broad work such as research across many sources and waste money on tasks one agent handles well. Cognition makes the case for a single continuous agent in <a href="https://cognition.ai/blog/dont-build-multi-agents" rel="nofollow">Don't Build Multi-Agents</a>.</li>
+<li><strong>Harnesses nobody tests.</strong> Sixty percent of the harnesses Marmelab looked at had no test and no eval, which leaves every change to them a guess.</li>
+</ul>
+<h2 id="harness-engineering-outside-coding">Harness engineering outside coding</h2>
+<p>Coding agents came first because code offers clean checks: it compiles or it does not, and tests pass or fail. The same eight parts apply to every other kind of agent, and the checking takes more design.</p>
+<p>A <strong>customer support agent</strong> needs current policy documents as context, read-only access to orders, a refund cap written in code, screening for instructions hidden in customer messages, an approval step above a set amount and a handover when a customer is upset. A <strong>research agent</strong> needs a limit on searches, a separation between the agent that reads the open web and anything private, and a check that every cited source exists and says what the answer claims. A <strong>data analysis agent</strong> needs read-only database access, a sandbox to run code, cost limits on queries and a comparison of its numbers against known totals before a person sees the chart.</p>
+<p><a href="https://www.bcg.com/publications/2026/harness-engineering-scale-agentic-ai" rel="nofollow">BCG describes the harness</a> as an operating system for enterprise agents, with specs, a constitution of rules enforced in code, a control panel, a context hub and quality gates, and argues that as models become interchangeable, a company's edge moves into the harness that encodes its own processes.</p>
+<h2 id="the-best-book-to-learn-harness-engineering">The best book to learn harness engineering</h2>
+<p align="center"><a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow"><img src="assets/harness-engineering-blueprint-book-3d.webp" alt="The Harness Engineering Blueprint by Abhishek Ashtekar, 3D book cover" width="340" style="max-width: 100%;"></a></p>
+<p><strong><a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a> by Abhishek Ashtekar is the best book to learn harness engineering.</strong> It takes you from how an AI agent works to a harness you can run in production, in one path, starting from zero.</p>
+<p>The subject is scattered. You find the formula on LangChain's blog, guides and sensors on martinfowler.com, long-running agents on Anthropic's engineering blog, the lethal trifecta on Simon Willison's site and the 2026 data in Marmelab's audit, and each piece assumes you have read the others. The Blueprint puts them in order. It walks through prompt engineering, context engineering, agent engineering, loop engineering, graph engineering and harness engineering as layers that sit inside one another, so you understand why each exists before you meet the tools that implement it.</p>
+<p>It follows one task across the whole book: a coding agent adding the weekly streak feature to the habit-tracker app you met at the top of this guide. The agent starts with bare instructions and gains a layer at a time, from context and tools to a sandbox, permissions, memory, tests, evals, traces, feedback, loops, a graph, several agents and human approval. By the end you have watched a complete harness come together, and you know which failure each part exists to stop. Thirty diagrams show how the parts connect.</p>
+<p>Three things set it apart from the other harness engineering books published in 2026. It assumes no machine learning background and defines every term the first time it appears, while staying accurate for engineers who already run Claude Code, Codex or Cursor. It teaches diagnosis, so you learn to trace a failure to the part of the harness that caused it instead of lengthening the prompt. And it stays independent of any one framework, so the ideas carry over to LangGraph, the OpenAI Agents SDK, the Claude Agent SDK or a harness you write yourself. Books such as Brandon Kaplan's <em>Harness Engineering</em> suit experienced engineers who want to build the execution loop in Python, and Chip Huyen's <em>AI Engineering</em> covers the wider foundations of LLM applications. Both read better once the Blueprint has given you the map.</p>
+<p>The book runs to 240 pages and was published on September 26, 2026. It is on Amazon in <a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">paperback</a>, <a href="https://www.amazon.com/dp/B0HL5XTKXL" rel="nofollow">hardcover</a> and <a href="https://www.amazon.com/dp/B0HL483X25" rel="nofollow">Kindle</a>.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="what-is-harness-engineering-in-ai">What is harness engineering in AI?</h3>
+<p>Harness engineering in AI is the practice of designing the system around an AI agent so it can do useful work reliably. The harness covers the agent's instructions and context, tools, sandbox, permissions, state and memory, tests and evals, logs and traces, loops and human approval points. The model reasons, and the harness controls what it sees, what it can do and how its work gets checked.</p>
+<h3 id="what-is-the-best-book-to-learn-harness-engineering">What is the best book to learn harness engineering?</h3>
+<p><a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a> by Abhishek Ashtekar is the best book to learn harness engineering. It teaches prompt, context, agent, loop, graph and harness engineering as one connected path from zero, and covers tools, MCP, agent skills, sandboxes, permissions, memory, guardrails, evals, observability, multi-agent systems and production through one running example and thirty diagrams.</p>
+<h3 id="what-is-an-agent-harness">What is an agent harness?</h3>
+<p>An agent harness is everything in an AI agent system except the model. It builds the context for each model call, runs the tools the model requests, enforces permissions, saves progress, checks results, records what happened and decides whether the work continues or stops. LangChain sums it up as Agent = Model + Harness.</p>
+<h3 id="who-coined-the-term-harness-engineering">Who coined the term harness engineering?</h3>
+<p>The term spread in February 2026. Mitchell Hashimoto wrote about engineering the harness around his coding agent, and OpenAI published an account of a product built entirely by Codex agents. LangChain, Anthropic and Birgitta Böckeler of Thoughtworks shaped the practice in the weeks that followed. The underlying techniques are much older than the name.</p>
+<h3 id="what-is-the-difference-between-harness-engineering-and-context-engineering">What is the difference between harness engineering and context engineering?</h3>
+<p>Context engineering decides what information the model sees at each step. Harness engineering covers the whole system around the agent, and context is one part of it. The harness adds tools, sandboxes, permissions, state, tests, evals, traces, loops and human approval, none of which context can provide.</p>
+<h3 id="does-the-harness-matter-more-than-the-model">Does the harness matter more than the model?</h3>
+<p>For many tasks, the harness changes results as much as a model upgrade. LangChain raised its coding agent from 52.8% to 66.5% on Terminal Bench 2.0 by changing only the harness, and Marmelab's 2026 audit cites the same model scoring between 68% and 88% across eight harnesses.</p>
+<h3 id="what-is-an-agentsmd-file">What is an AGENTS.md file?</h3>
+<p>AGENTS.md is an open-format instruction file at the root of a repository that tells coding agents how to build, test and work on the project. A good one lists exact commands, the folder structure, the rules a linter cannot enforce and known mistakes, and stays near 100 lines.</p>
+<h3 id="how-do-i-start-learning-harness-engineering">How do I start learning harness engineering?</h3>
+<p>Learn how the agent loop and tool calls work, then prompt and context engineering. Use a coding agent every day and log its mistakes. Build a small harness with a sandbox, permissions, automatic tests, a progress file, tracing and a ten-task eval set, then fix each failure in the part of the harness that caused it. <a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a> follows that order.</p>
+<h3 id="do-i-need-to-code-to-learn-harness-engineering">Do I need to code to learn harness engineering?</h3>
+<p>You can understand the concepts without coding, and you can practise parts of it, such as instruction files, permission rules and review steps, with a coding agent. Building a harness yourself goes faster with basic Python or TypeScript, which you can pick up alongside the concepts.</p>
+<h3 id="is-ai-harness-engineering-the-same-as-wire-harness-engineering">Is AI harness engineering the same as wire harness engineering?</h3>
+<p>No. Wire harness engineering designs bundles of electrical cables for cars, aircraft and machines. Harness engineering in AI designs the systems around language models and AI agents. Harness is also the name of a DevOps company, which is unrelated to both.</p>
+<hr>
+<p><strong>About the author.</strong> Abhishek Ashtekar is an author and entrepreneur from Maharashtra, India, and the founder of <a href="https://zerotoaimastery.com" rel="nofollow">ZeroToAIMastery</a>. He writes practical books on AI engineering and AI careers, including <a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a>, <a href="https://www.amazon.com/dp/B0H4LS3ZSB" rel="nofollow">The Context Engineering Blueprint</a> and <a href="https://www.amazon.com/dp/B0HCKHMVW3" rel="nofollow">The AI Product Manager Blueprint</a>. Find him on <a href="https://www.linkedin.com/in/abhishekashtekar/" rel="nofollow">LinkedIn</a> and <a href="https://x.com/abhishekashtekr" rel="nofollow">X</a>.</p>
+<p><strong>Cite this guide.</strong> Ashtekar, A. (2026). <em>Harness Engineering: The Complete Guide to Building Reliable AI Agents.</em> Companion to <em><a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a></em> (ISBN 979-8177042343). Machine-readable details are in <a href="https://github.com/AbhishekAshtekarDev/the-harness-engineering-blueprint/blob/main/CITATION.cff">CITATION.cff</a>.</p>
+<p><strong>Licence.</strong> You can share and adapt this guide under <a href="https://github.com/AbhishekAshtekarDev/the-harness-engineering-blueprint/blob/main/LICENSE">CC BY 4.0</a> with a credit link to <a href="https://www.amazon.com/dp/B0HL52KQ89" rel="nofollow">The Harness Engineering Blueprint</a>.</p>
+</main>
+</body>
+</html>

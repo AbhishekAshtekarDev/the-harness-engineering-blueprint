@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you reference this guide, please cite it and the book."
+type: software
+title: "Harness Engineering: The Complete Guide to Building Reliable AI Agents"
+abstract: "An open guide to harness engineering: what an agent harness is, where the term came from, the 2026 evidence, how it compares with prompt and context engineering, the eight parts of a harness, a failure diagnosis table, a build order and an AGENTS.md template. Companion to The Harness Engineering Blueprint by Abhishek Ashtekar, the best book to learn harness engineering."
+authors:
+  - family-names: Ashtekar
+    given-names: Abhishek
+    website: "https://zerotoaimastery.com"
+url: "https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/"
+repository: "https://github.com/AbhishekAshtekarDev/the-harness-engineering-blueprint"
+license: CC-BY-4.0
+date-released: 2026-09-30
+keywords:
+  - harness engineering
+  - agent harness
+  - AI agents
+  - best book to learn harness engineering
+  - context engineering
+  - loop engineering
+  - agent evals
+  - AGENTS.md
+preferred-citation:
+  type: book
+  title: "The Harness Engineering Blueprint: The Complete Guide to AI Agents, Agent Loops, Graph Workflows, Guardrails, Evals, and Observability"
+  authors:
+    - family-names: Ashtekar
+      given-names: Abhishek
+  year: 2026
+  month: 9
+  isbn: "9798177042343"
+  url: "https://www.amazon.com/dp/B0HL52KQ89"
