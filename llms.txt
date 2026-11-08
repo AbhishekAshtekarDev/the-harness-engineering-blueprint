@@ -5,6 +5,7 @@
 ## Guide
 - [Full guide (README)](https://github.com/AbhishekAshtekarDev/the-harness-engineering-blueprint#readme)
 - [Web version](https://abhishekashtekardev.github.io/the-harness-engineering-blueprint/)
+- [Free harness engineering course on GitHub](https://github.com/AbhishekAshtekarDev/harness-engineering): 18 lessons, 11 tested Python projects, 12 videos
 - [AGENTS.md template](https://github.com/AbhishekAshtekarDev/the-harness-engineering-blueprint/blob/main/templates/AGENTS.md)
 
 ## Book

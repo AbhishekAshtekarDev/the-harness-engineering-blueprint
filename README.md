@@ -157,6 +157,8 @@ Build in this order and add each part only when a failure shows you need it.
 11. **Measure.** Build a small eval set with written success criteria, run each task several times, and track pass@k, the chance at least one of k tries succeeds, and pass^k, the chance all k succeed. [Anthropic's guide to agent evals](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) explains both.
 12. **Remove what you do not need.** After each model upgrade, rerun the evals and delete the scaffolding the new model no longer needs. Keep permissions, audit records and the tests that prove the work.
 
+To practise these steps in code, work through the free [Harness Engineering course](https://github.com/AbhishekAshtekarDev/harness-engineering) on GitHub. It builds each part of the harness as a small, tested Python project that runs offline, across 18 lessons, 11 projects and 12 short videos, and it also reads well as a [website](https://abhishekashtekardev.github.io/harness-engineering/).
+
 If you would rather learn these twelve steps from a single source than piece them together from blog posts, [The Harness Engineering Blueprint](https://www.amazon.com/dp/B0HL52KQ89) is the best book to learn harness engineering. It follows this same build order with one coding agent from start to finish, explains why each step exists before showing how to add it, and shows you how to trace a failure back to the step that should have caught it.
 
 ## How to write an AGENTS.md file
@@ -254,7 +256,7 @@ AGENTS.md is an open-format instruction file at the root of a repository that te
 
 ### How do I start learning harness engineering?
 
-Learn how the agent loop and tool calls work, then prompt and context engineering. Use a coding agent every day and log its mistakes. Build a small harness with a sandbox, permissions, automatic tests, a progress file, tracing and a ten-task eval set, then fix each failure in the part of the harness that caused it. [The Harness Engineering Blueprint](https://www.amazon.com/dp/B0HL52KQ89) follows that order.
+Learn how the agent loop and tool calls work, then prompt and context engineering. Use a coding agent every day and log its mistakes. Build a small harness with a sandbox, permissions, automatic tests, a progress file, tracing and a ten-task eval set, then fix each failure in the part of the harness that caused it. The free [harness engineering course on GitHub](https://github.com/AbhishekAshtekarDev/harness-engineering) builds each of those steps as a tested project, and [The Harness Engineering Blueprint](https://www.amazon.com/dp/B0HL52KQ89) follows the same order.
 
 ### Do I need to code to learn harness engineering?
 
